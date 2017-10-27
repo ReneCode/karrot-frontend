@@ -20,6 +20,12 @@ import './socket'
 import i18n from './i18n'
 import log from '@/services/log'
 
+if (CORDOVA) {
+  require('@/cordova/url')
+  require('@/cordova/csrf')
+  require('@/cordova/fcm')
+}
+
 Vue.config.productionTip = false
 Vue.use(Quasar)
 

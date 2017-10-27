@@ -12,3 +12,5 @@ nbproject/
 storybook-static
 coverage/
 e2e-screenshots
+.env
+cordova/google-services.json
